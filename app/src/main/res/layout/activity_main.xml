@@ -34,7 +34,7 @@
                 android:id="@+id/login_ui_code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_code_24"
+                android:src="@drawable/wev_view_ic_code_24"
                 android:padding="10dp"
                 android:onClick="goToLoginUiComponents"/>
 
@@ -42,7 +42,7 @@
                 android:id="@+id/login_ui_shape"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_shapes_24"
+                android:src="@drawable/web_view_ic_shapes_24"
                 android:padding="10dp"
                 android:onClick="goToLoginUiComponents"/>
 
@@ -50,7 +50,7 @@
                 android:id="@+id/login_ui_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_color_lens_24"
+                android:src="@drawable/web_view_ic_color_lens_24"
                 android:padding="10dp"
                 android:onClick="goToLoginUiComponents"/>
 
@@ -66,7 +66,7 @@
                 android:id="@+id/login_ui_font"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_font_download_24"
+                android:src="@drawable/we_view_ic_font_download_24"
                 android:padding="10dp"
                 android:onClick="goToLoginUiComponents"/>
 

@@ -8,8 +8,10 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
+        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_ui_buttonshapewhitebg">
 
         <TextView
             android:layout_width="match_parent"
@@ -20,15 +22,55 @@
             android:textStyle="bold"
             android:onClick="goToLoginUi"/>
 
-        <ImageView
-            android:id="@+id/login_ui"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_code_24"
+            android:orientation="horizontal"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:padding="10dp"
-            android:onClick="goToCode"/>
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/login_ui_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_code_24"
+                android:padding="10dp"
+                android:onClick="goToLoginUiComponents"/>
+
+            <ImageView
+                android:id="@+id/login_ui_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_shapes_24"
+                android:padding="10dp"
+                android:onClick="goToLoginUiComponents"/>
+
+            <ImageView
+                android:id="@+id/login_ui_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_color_lens_24"
+                android:padding="10dp"
+                android:onClick="goToLoginUiComponents"/>
+
+            <ImageView
+                android:id="@+id/login_ui_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_style_24"
+                android:padding="10dp"
+                android:onClick="goToLoginUiComponents"/>
+
+            <ImageView
+                android:id="@+id/login_ui_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_font_download_24"
+                android:padding="10dp"
+                android:onClick="goToLoginUiComponents"/>
+
+        </LinearLayout>
 
     </RelativeLayout>
 

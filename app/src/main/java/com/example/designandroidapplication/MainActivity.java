@@ -50,4 +50,8 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(URL, url);
         startActivity(intent);
     }
+
+    public void goToSignInLogInActivity(View view) {
+        startActivity(new Intent(this, LoginSignInActivity.class));
+    }
 }

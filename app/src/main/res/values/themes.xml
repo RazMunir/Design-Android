@@ -22,4 +22,11 @@
         <item name="colorAccent">@color/textInputLayout</item>
         <item name="android:textColorHint">@color/textInputLayout</item>
     </style>
+
+    <style name="loginSigninStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FF2729C3</item>
+        <item name="colorPrimaryDark">#FF2729C3</item>
+        <item name="colorAccent">#FF2729C3</item>
+    </style>
 </resources>

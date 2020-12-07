@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.designandroidapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesignAndroidApplication">
-        <activity android:name=".WebViewActivity"></activity>
-        <activity android:name=".LoginUiActivity" />
+        <activity android:name=".LoginSignInActivity"></activity>
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".LoginUiActivity" android:theme="@style/loginSigninStyle" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

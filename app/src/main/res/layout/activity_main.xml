@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_marginTop="2dp"
@@ -64,6 +65,73 @@
 
             <ImageView
                 android:id="@+id/login_ui_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/we_view_ic_font_download_24"
+                android:padding="10dp"
+                android:onClick="goToLoginUiComponents"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_ui_buttonshapewhitebg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Login Ui"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:onClick="goToSignInLogInActivity"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/login_signin_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wev_view_ic_code_24"
+                android:padding="10dp"
+                android:onClick="goToLoginUiComponents"/>
+
+            <ImageView
+                android:id="@+id/login_signin_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_shapes_24"
+                android:padding="10dp"
+                android:onClick="goToLoginUiComponents"/>
+
+            <ImageView
+                android:id="@+id/login_signin_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_color_lens_24"
+                android:padding="10dp"
+                android:onClick="goToLoginUiComponents"/>
+
+            <ImageView
+                android:id="@+id/login_signin_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_style_24"
+                android:padding="10dp"
+                android:onClick="goToLoginUiComponents"/>
+
+            <ImageView
+                android:id="@+id/login_signin_font"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/we_view_ic_font_download_24"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginSignInActivity">
+    tools:context=".SignInSignUpActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,8 +23,8 @@
                 android:layout_height="120dp"
                 android:layout_centerHorizontal="true"
                 android:elevation="9dp"
-                android:src="@drawable/sigin_boy_img"
-                app:civ_border_color="@color/colorAccent"
+                android:src="@drawable/singn_in_sign_up_sigin_boy_img"
+                app:civ_border_color="#FF2729C3"
                 app:civ_border_width="3dp" />
 
             <androidx.cardview.widget.CardView
@@ -53,7 +53,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
-                            android:background="@color/colorAccent"
+                            android:background="#FF2729C3"
                             android:fontFamily="@font/calibri"
                             android:gravity="center_horizontal"
                             android:paddingTop="12dp"
@@ -69,14 +69,14 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
-                            android:background="@drawable/bordershape"
+                            android:background="@drawable/singn_in_sign_up_bordershape"
                             android:fontFamily="@font/calibri"
                             android:gravity="center_horizontal"
                             android:paddingTop="12dp"
                             android:paddingBottom="12dp"
                             android:text="SignUp"
                             android:textAlignment="center"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="#FF2729C3"
                             android:textSize="16dp"
                             android:textStyle="bold" />
 
@@ -150,8 +150,8 @@
                             android:layout_gravity="center"
                             android:layout_marginTop="24dp"
                             android:layout_marginBottom="16dp"
-                            android:background="@drawable/buttonshape"
-                            android:drawableLeft="@drawable/ic_touch_app_white_24dp"
+                            android:background="@drawable/singn_in_sign_up_buttonshape"
+                            android:drawableLeft="@drawable/singn_in_sign_up_ic_touch_app_white_24dp"
                             android:fontFamily="@font/calibri"
                             android:paddingLeft="16dp"
                             android:paddingRight="16dp"

@@ -52,6 +52,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToSignInLogInActivity(View view) {
-        startActivity(new Intent(this, LoginSignInActivity.class));
+        startActivity(new Intent(this, SignInSignUpActivity.class));
     }
 }

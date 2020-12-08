@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class LoginSignInActivity extends AppCompatActivity {
+public class SignInSignUpActivity extends AppCompatActivity {
 
     TextView signin, signup, signin_signup_txt, forgot_password;
     CircleImageView circleImageView;
@@ -19,7 +19,7 @@ public class LoginSignInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_sign_in);
+        setContentView(R.layout.activity_sign_in_sign_up);
 
         signin = findViewById(R.id.signin);
         signup = findViewById(R.id.signup);
@@ -33,8 +33,8 @@ public class LoginSignInActivity extends AppCompatActivity {
                 signin.setTextColor(Color.parseColor("#FFFFFF"));
                 signin.setBackgroundColor(Color.parseColor("#FF2729C3"));
                 signup.setTextColor(Color.parseColor("#FF2729C3"));
-                signup.setBackgroundResource(R.drawable.bordershape);
-                circleImageView.setImageResource(R.drawable.sigin_boy_img);
+                signup.setBackgroundResource(R.drawable.singn_in_sign_up_bordershape);
+                circleImageView.setImageResource(R.drawable.singn_in_sign_up_sigin_boy_img);
                 signin_signup_txt.setText("Sign In");
                 signin_signup_btn.setText("Sign In");
                 forgot_password.setVisibility(View.VISIBLE);
@@ -46,8 +46,8 @@ public class LoginSignInActivity extends AppCompatActivity {
                 signup.setTextColor(Color.parseColor("#FFFFFF"));
                 signup.setBackgroundColor(Color.parseColor("#FF2729C3"));
                 signin.setTextColor(Color.parseColor("#FF2729C3"));
-                signin.setBackgroundResource(R.drawable.bordershape);
-                circleImageView.setImageResource(R.drawable.sigup_boy_img);
+                signin.setBackgroundResource(R.drawable.singn_in_sign_up_bordershape);
+                circleImageView.setImageResource(R.drawable.singn_in_sign_up_sigup_boy_img);
                 signin_signup_txt.setText("Sign Up");
                 signin_signup_btn.setText("Sign Up");
                 forgot_password.setVisibility(View.INVISIBLE);

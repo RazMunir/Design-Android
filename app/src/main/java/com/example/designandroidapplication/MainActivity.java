@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
 
         switch (view.getId()) {
-            case R.id.login_ui_code:
+            case R.id.login_ui_xml:
                 url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_login_ui.xml";
                 break;
             case R.id.login_ui_shape:
@@ -53,5 +53,33 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToSignInLogInActivity(View view) {
         startActivity(new Intent(this, SignInSignUpActivity.class));
+    }
+
+    public void goToSignInSignUpComponents(View view) {
+        String url = "";
+        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+
+        switch (view.getId()) {
+            case R.id.sign_in_sign_up_code:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_login_ui.xml";
+                break;
+            case R.id.sign_in_sign_up_xml:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/login_ui_buttonshapewhitebg.xml";
+                break;
+            case R.id.sign_in_sign_up_shape:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/colors.xml";
+                break;
+            case R.id.sign_in_sign_up_color:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/themes.xml";
+                break;
+            case R.id.sign_in_sign_up_style:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/font/gotham.ttf";
+                break;
+            default:
+                Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        intent.putExtra(URL, url);
+        startActivity(intent);
     }
 }

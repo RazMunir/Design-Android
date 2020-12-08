@@ -32,10 +32,10 @@
             android:layout_alignParentEnd="true">
 
             <ImageView
-                android:id="@+id/login_ui_code"
+                android:id="@+id/login_ui_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/wev_view_ic_code_24"
+                android:src="@drawable/web_view_ic_xml_24"
                 android:padding="10dp"
                 android:onClick="goToLoginUiComponents"/>
 
@@ -99,44 +99,44 @@
             android:layout_alignParentEnd="true">
 
             <ImageView
-                android:id="@+id/login_signin_code"
+                android:id="@+id/sign_in_sign_up_code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/wev_view_ic_code_24"
                 android:padding="10dp"
-                android:onClick="goToLoginUiComponents"/>
+                android:onClick="goToSignInSignUpComponents"/>
 
             <ImageView
-                android:id="@+id/login_signin_shape"
+                android:id="@+id/sign_in_sign_up_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_xml_24"
+                android:padding="10dp"
+                android:onClick="goToSignInSignUpComponents"/>
+
+            <ImageView
+                android:id="@+id/sign_in_sign_up_shape"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/web_view_ic_shapes_24"
                 android:padding="10dp"
-                android:onClick="goToLoginUiComponents"/>
+                android:onClick="goToSignInSignUpComponents"/>
 
             <ImageView
-                android:id="@+id/login_signin_color"
+                android:id="@+id/sign_in_sign_up_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/web_view_ic_color_lens_24"
                 android:padding="10dp"
-                android:onClick="goToLoginUiComponents"/>
+                android:onClick="goToSignInSignUpComponents"/>
 
             <ImageView
-                android:id="@+id/login_signin_style"
+                android:id="@+id/sign_in_sign_up_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/web_view_ic_style_24"
                 android:padding="10dp"
-                android:onClick="goToLoginUiComponents"/>
-
-            <ImageView
-                android:id="@+id/login_signin_font"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/we_view_ic_font_download_24"
-                android:padding="10dp"
-                android:onClick="goToLoginUiComponents"/>
+                android:onClick="goToSignInSignUpComponents"/>
 
         </LinearLayout>
 

@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".SignInSignUpActivity">
 
+    <!--    @drawable/singn_in_sign_up_sigin_boy_img-->
+    <!--    @drawable/singn_in_sign_up_buttonshape-->
+    <!--    @font/calibri-->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

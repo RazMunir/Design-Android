@@ -50,7 +50,9 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(URL, url);
         startActivity(intent);
     }
+    //login UI end
 
+    //SignIn SignUp
     public void goToSignInLogInActivity(View view) {
         startActivity(new Intent(this, SignInSignUpActivity.class));
     }
@@ -61,19 +63,19 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.sign_in_sign_up_code:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_login_ui.xml";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/java/com/example/designandroidapplication/SignInSignUpActivity.java";
                 break;
             case R.id.sign_in_sign_up_xml:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/login_ui_buttonshapewhitebg.xml";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_sign_in_sign_up.xml";
                 break;
             case R.id.sign_in_sign_up_shape:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/colors.xml";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/singn_in_sign_up_bordershape.xml";
                 break;
-            case R.id.sign_in_sign_up_color:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/themes.xml";
+            case R.id.sign_in_sign_up_shape_2:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/singn_in_sign_up_buttonshape.xml";
                 break;
             case R.id.sign_in_sign_up_style:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/font/gotham.ttf";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/themes.xml";
                 break;
             default:
                 Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
@@ -82,4 +84,5 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(URL, url);
         startActivity(intent);
     }
+    //SignIn SignUp end
 }

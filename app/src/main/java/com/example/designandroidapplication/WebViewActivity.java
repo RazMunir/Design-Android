@@ -3,7 +3,9 @@ package com.example.designandroidapplication;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -26,8 +28,17 @@ public class WebViewActivity extends AppCompatActivity {
             url = bundle.getString("url");
         }
 
+        //progress dialog
+        ProgressDialog pd = new ProgressDialog(WebViewActivity.this);
+        pd.setTitle("Loading..");
+        pd.setMessage("Please wait, your requested page is loading");
+        pd.setCanceledOnTouchOutside(false);
+        pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+//        pd.show();
+//        pd.dismiss();
+
         webView = findViewById(R.id.webView);
-        webView.setWebViewClient(new MyBrowser());
+        webView.setWebViewClient(new MyBrowser(pd));
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
@@ -35,10 +46,30 @@ public class WebViewActivity extends AppCompatActivity {
     }
 
     private class MyBrowser extends WebViewClient {
+
+        ProgressDialog progressDialog;
+
+        public MyBrowser(ProgressDialog pd) {
+            this.progressDialog = pd;
+            progressDialog.show();
+        }
+
+        @Override
+        public void onPageStarted(WebView view, String url, Bitmap favicon) {
+            super.onPageStarted(view, url, favicon);
+            progressDialog.show();
+        }
+
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             view.loadUrl(url);
             return true;
+        }
+
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            super.onPageFinished(view, url);
+            progressDialog.dismiss();
         }
     }
 

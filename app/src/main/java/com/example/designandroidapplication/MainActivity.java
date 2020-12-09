@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class MainActivity extends AppCompatActivity {
 
     String URL = "url";
@@ -85,4 +87,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     //SignIn SignUp end
+
+    //Lottie Animation
+    public void goToLottieAnimationActivity(View view) {
+        startActivity(new Intent(this, LottieAnimationActivity.class));
+    }
+    //lottie Animation End
 }

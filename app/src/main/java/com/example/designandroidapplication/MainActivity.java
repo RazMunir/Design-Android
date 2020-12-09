@@ -92,5 +92,24 @@ public class MainActivity extends AppCompatActivity {
     public void goToLottieAnimationActivity(View view) {
         startActivity(new Intent(this, LottieAnimationActivity.class));
     }
+
+    public void goToLottieAniationComponents(View view) {
+        String url = "";
+        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+
+        switch (view.getId()) {
+            case R.id.lottie_animation_xml:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_lottie_animation.xml";
+                break;
+            case R.id.lottie_animation_dependency:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/build.gradle";
+                break;
+            default:
+                Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        intent.putExtra(URL, url);
+        startActivity(intent);
+    }
     //lottie Animation End
 }

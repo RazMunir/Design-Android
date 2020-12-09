@@ -166,44 +166,20 @@
             android:layout_alignParentEnd="true">
 
             <ImageView
-                android:id="@+id/lottie_animation_code"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/wev_view_ic_code_24"
-                android:padding="10dp"
-                android:onClick="goToSignInSignUpComponents"/>
-
-            <ImageView
                 android:id="@+id/lottie_animation_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/web_view_ic_xml_24"
                 android:padding="10dp"
-                android:onClick="goToSignInSignUpComponents"/>
+                android:onClick="goToLottieAniationComponents"/>
 
             <ImageView
-                android:id="@+id/lottie_animation_shape"
+                android:id="@+id/lottie_animation_dependency"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_shapes_24"
+                android:src="@drawable/web_view_ic_dependancy_24"
                 android:padding="10dp"
-                android:onClick="goToSignInSignUpComponents"/>
-
-            <ImageView
-                android:id="@+id/lottie_animation_shape_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_shapes_24"
-                android:padding="10dp"
-                android:onClick="goToSignInSignUpComponents"/>
-
-            <ImageView
-                android:id="@+id/lottie_animation_style"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_style_24"
-                android:padding="10dp"
-                android:onClick="goToSignInSignUpComponents"/>
+                android:onClick="goToLottieAniationComponents"/>
 
         </LinearLayout>
 

@@ -124,16 +124,16 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.sign_in_xml:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_lottie_animation.xml";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_sign_in.xml";
                 break;
             case R.id.sign_in_attributes:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/build.gradle";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/attrs.xml";
                 break;
             case R.id.sign_in_style:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/build.gradle";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/themes.xml";
                 break;
             case R.id.sign_in_dimension:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/build.gradle";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/dimens.xml";
                 break;
             default:
                 Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();

@@ -30,4 +30,43 @@
         <item name="colorPrimaryDark">#FF2729C3</item>
         <item name="colorAccent">#FF2729C3</item>
     </style>
+
+<!--  SignInActivity Theme-->
+    <style name="Theme.SignIn.CustomTheme" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/teal_200</item>
+        <!--        Screen bottom panel color-->
+        <item name="android:colorBackground">@color/white</item>
+        <!--        Radio button focus color-->
+        <item name="colorSecondary">@color/teal_200</item>
+        <!--        status bar colot-->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/teal_200</item>
+        <!--        to change editText's cursor, bottom bar color-->
+        <item name="colorAccent">@color/softBalck</item>
+
+        <item name="primaryBackgroundColor">@color/textInputLayout</item>
+        <item name="secondaryBackgroundColor">@color/white</item>
+        <item name="buttonColor">@color/teal_200</item>
+        <item name="iconColor">@color/softBalck</item>
+        <item name="titleTextColor">@color/black</item>
+        <item name="priceTextColor">@color/teal_200</item>
+        <item name="textColor">@color/black</item>
+        <item name="buttonTintColor">@color/black</item>
+    </style>
+
+<!--     Edit text theme for SignInActivity-->
+    <style name="Theme.EditText" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="android:background">@drawable/singn_in_sign_up_buttonshape</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/teal_200</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">?attr/textColor</item>
+        <item name="android:textColorHint">?attr/secondaryBackgroundColor</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:drawableTint" tools:targetApi="m">?attr/iconColor</item>
+    </style>
+
+<!--     Edit text theme for SignInActivity-->
+    <style name="Theme.Button" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="android:backgroundTint" tools:ignore="NewApi">?attr/buttonColor</item>
+        <item name="android:textColor">?attr/secondaryBackgroundColor</item>
+    </style>
 </resources>

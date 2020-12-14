@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, LottieAnimationActivity.class));
     }
 
-    public void goToLottieAniationComponents(View view) {
+    public void goToLottieAnimationComponents(View view) {
         String url = "";
         Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
 
@@ -112,4 +112,35 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     //lottie Animation End
+
+    //SignIn Activity
+    public void goToSignInActivity(View view) {
+        startActivity(new Intent(this, SignInActivity.class));
+    }
+
+    public void goToSignInComponents(View view) {
+        String url = "";
+        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+
+        switch (view.getId()) {
+            case R.id.sign_in_xml:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_lottie_animation.xml";
+                break;
+            case R.id.sign_in_attributes:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/build.gradle";
+                break;
+            case R.id.sign_in_style:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/build.gradle";
+                break;
+            case R.id.sign_in_dimension:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/build.gradle";
+                break;
+            default:
+                Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        intent.putExtra(URL, url);
+        startActivity(intent);
+    }
+    //End SignIn Activity
 }

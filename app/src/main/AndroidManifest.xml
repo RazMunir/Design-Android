@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesignAndroidApplication">
-        <activity android:name=".LottieAnimationActivity"></activity>
+        <activity android:name=".SignInActivity" android:theme="@style/Theme.SignIn.CustomTheme" />
+        <activity android:name=".LottieAnimationActivity" />
         <activity
             android:name=".SignInSignUpActivity"
             android:theme="@style/signInSignUpStyle" />

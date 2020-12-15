@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.airbnb.lottie.LottieAnimationView;
+import com.example.designandroidapplication.Blue.BlueActivity;
 
 public class MainActivity extends AppCompatActivity {
 

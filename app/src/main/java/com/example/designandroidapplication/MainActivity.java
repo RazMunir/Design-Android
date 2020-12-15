@@ -143,4 +143,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     //End SignIn Activity
+
+    //Blue signIn Activity
+    public void goToBlueSignInActivity(View view) {
+        startActivity(new Intent(this, BlueActivity.class));
+    }
 }

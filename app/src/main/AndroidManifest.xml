@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesignAndroidApplication">
-        <activity android:name=".Blue.BlueSignUpActivity"></activity>
+        <activity android:name=".DropSignInActivity" android:theme="@style/DropSignInTheme"></activity>
+        <activity android:name=".Blue.BlueSignUpActivity" />
         <activity android:name=".Blue.BlueForgetPasswordActivity" />
         <activity android:name=".Blue.BlueActivity" />
         <activity

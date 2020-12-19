@@ -14,4 +14,8 @@
     <color name="textInputLayout">#96ffffff</color>
     <color name="softBalck">#96887D7D</color>
 
+<!--    DropSignInActivity color-->
+    <color name="drop_sign_in_one">#008577</color>
+    <color name="drop_sign_in_two">#00574B</color>
+    <color name="drop_sign_in_three">#D81B60</color>
 </resources>

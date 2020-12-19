@@ -75,4 +75,12 @@
         <item name="colorControlActivated">@color/white</item>
     </style>
 
+<!--    DropSignInActivity theme-->
+    <style name="DropSignInTheme" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/drop_sign_in_one</item>
+        <item name="colorPrimaryDark">@color/drop_sign_in_two</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <item name="colorControlNormal">@color/black</item>
+    </style>
 </resources>

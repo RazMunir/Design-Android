@@ -174,4 +174,36 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     //End Blue SignIn Activity
+
+    //Drop SignIn Activity
+    public void goToDropSignInActivity(View view) {
+        startActivity(new Intent(this, DropSignInActivity.class));
+    }
+
+    public void goToDropSignInActivityComponents(View view) {
+        String url = "";
+        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+
+        switch (view.getId()) {
+            case R.id.drop_sign_in_xml:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_blue.xml";
+                break;
+            case R.id.drop_sign_in_shape:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/blue_sign_in_gradient_background_light_blue.xml";
+                break;
+            case R.id.drop_sign_in_shape_two:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/java/com/example/designandroidapplication/Blue/BlueActivity.java";
+                break;
+            case R.id.drop_sign_in_style:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/themes.xml";
+                break;
+            default:
+                Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        intent.putExtra(URL, url);
+        startActivity(intent);
+    }
+
+    //End Drop SignIn Activity
 }

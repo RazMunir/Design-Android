@@ -303,4 +303,63 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_ui_buttonshapewhitebg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Blue Login System"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:onClick="goToDropSignInActivity"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/drop_sign_in_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_xml_24"
+                android:padding="10dp"
+                android:onClick="goToDropSignInActivityComponents"/>
+
+            <ImageView
+                android:id="@+id/drop_sign_in_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_shapes_24"
+                android:padding="10dp"
+                android:onClick="goToDropSignInActivityComponents"/>
+
+            <ImageView
+                android:id="@+id/drop_sign_in_shape_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_shapes_24"
+                android:padding="10dp"
+                android:onClick="goToDropSignInActivityComponents"/>
+
+            <ImageView
+                android:id="@+id/drop_sign_in_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_style_24"
+                android:padding="10dp"
+                android:onClick="goToDropSignInActivityComponents"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
 </LinearLayout>

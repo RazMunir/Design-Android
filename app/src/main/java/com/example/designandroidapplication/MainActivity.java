@@ -186,13 +186,13 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.drop_sign_in_xml:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_blue.xml";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_drop_sign_in.xml";
                 break;
             case R.id.drop_sign_in_shape:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/blue_sign_in_gradient_background_light_blue.xml";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/drop_sign_in_half_circle.xml";
                 break;
             case R.id.drop_sign_in_shape_two:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/java/com/example/designandroidapplication/Blue/BlueActivity.java";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/drop_sign_in_half_blue_roundshape.xml";
                 break;
             case R.id.drop_sign_in_style:
                 url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/themes.xml";

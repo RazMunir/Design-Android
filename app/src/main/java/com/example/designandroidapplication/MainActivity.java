@@ -204,6 +204,12 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(URL, url);
         startActivity(intent);
     }
-
     //End Drop SignIn Activity
+
+    //Shape Activity
+    public void goToShapeActivity(View view) {
+        startActivity(new Intent(MainActivity.this, ShapeActivity.class));
+    }
+
+    //End Shape Activity
 }

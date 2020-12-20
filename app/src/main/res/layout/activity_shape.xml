@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShapeActivity"
+    android:background="@color/teal_200"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/btn_color"
+        app:cardCornerRadius="250dp"
+        app:cardElevation="10dp">
+
+        <ImageView
+            android:id="@+id/item_category_iv_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/shape_ic_account_circle_24"
+            app:tint="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/btn_color"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/second_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/shape_ic_account_circle_24"
+                app:tint="@color/white"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello Profile"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@+id/second_iv"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_round_stroke_shape"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:elevation="5dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_shape_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_round_stroke_shape"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:elevation="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click For change"
+            android:onClick="changeShapeAttributes"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Undo change"
+            android:onClick="undoChangeShapeAttributes"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_round_top_shape"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:elevation="5dp">
+
+    </LinearLayout>
+
+</LinearLayout>

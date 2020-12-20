@@ -18,4 +18,5 @@
     <color name="drop_sign_in_one">#008577</color>
     <color name="drop_sign_in_two">#00574B</color>
     <color name="drop_sign_in_three">#D81B60</color>
+    <color name="btn_color">#ff6969</color>
 </resources>

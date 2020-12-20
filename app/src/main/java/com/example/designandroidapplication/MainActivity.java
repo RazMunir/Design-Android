@@ -211,5 +211,30 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, ShapeActivity.class));
     }
 
+    public void goToShapeActivityComponents(View view) {
+        String url = "";
+        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+
+        switch (view.getId()) {
+            case R.id.shape_code:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/java/com/example/designandroidapplication/ShapeActivity.java";
+                break;
+            case R.id.shape_xml:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_shape.xml";
+                break;
+            case R.id.shape_shape:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/shape_round_top_shape.xml";
+                break;
+            case R.id.shape_shape_two:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/shape_round_stroke_shape.xml";
+                break;
+            default:
+                Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        intent.putExtra(URL, url);
+        startActivity(intent);
+    }
+
     //End Shape Activity
 }

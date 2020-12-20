@@ -372,7 +372,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="15dp"
-            android:text="Drop Sign In"
+            android:text="Shape Activity"
             android:textSize="@dimen/text_size_medium"
             android:textStyle="bold"
             android:onClick="goToShapeActivity"/>
@@ -386,12 +386,20 @@
             android:layout_alignParentEnd="true">
 
             <ImageView
+                android:id="@+id/shape_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wev_view_ic_code_24"
+                android:padding="10dp"
+                android:onClick="goToShapeActivityComponents"/>
+
+            <ImageView
                 android:id="@+id/shape_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/web_view_ic_xml_24"
                 android:padding="10dp"
-                android:onClick="goToDropSignInActivityComponents"/>
+                android:onClick="goToShapeActivityComponents"/>
 
             <ImageView
                 android:id="@+id/shape_shape"
@@ -399,7 +407,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/web_view_ic_shapes_24"
                 android:padding="10dp"
-                android:onClick="goToDropSignInActivityComponents"/>
+                android:onClick="goToShapeActivityComponents"/>
 
             <ImageView
                 android:id="@+id/shape_shape_two"
@@ -407,15 +415,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/web_view_ic_shapes_24"
                 android:padding="10dp"
-                android:onClick="goToDropSignInActivityComponents"/>
-
-            <ImageView
-                android:id="@+id/shape_style"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_style_24"
-                android:padding="10dp"
-                android:onClick="goToDropSignInActivityComponents"/>
+                android:onClick="goToShapeActivityComponents"/>
 
         </LinearLayout>
 

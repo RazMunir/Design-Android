@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesignAndroidApplication">
-        <activity android:name=".ShapeActivity"></activity>
+        <activity android:name=".NeumorphismActivity"></activity>
+        <activity android:name=".ShapeActivity" />
         <activity
             android:name=".DropSignInActivity"
             android:theme="@style/DropSignInTheme" />

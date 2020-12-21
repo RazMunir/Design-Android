@@ -235,6 +235,34 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(URL, url);
         startActivity(intent);
     }
-
     //End Shape Activity
+
+    //Neumorphism Activity
+    public void goToneumorphismActivity(View view) {
+        startActivity(new Intent(MainActivity.this, NeumorphismActivity.class));
+    }
+
+    public void goToNeumorphismActivityComponents(View view) {
+        String url = "";
+        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+
+        switch (view.getId()) {
+            case R.id.neumorphism_code:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/java/com/example/designandroidapplication/ShapeActivity.java";
+                break;
+            case R.id.neumorphism_xml:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_shape.xml";
+                break;
+            case R.id.neumorphism_dependency:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/shape_round_top_shape.xml";
+                break;
+            default:
+                Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        intent.putExtra(URL, url);
+        startActivity(intent);
+    }
+
+    //End Neumorphism Activit
 }

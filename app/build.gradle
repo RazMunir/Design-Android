@@ -40,4 +40,7 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     //lottie animation
     implementation 'com.airbnb.android:lottie:3.5.0'
+    //Neumorphism library
+//    implementation 'com.github.fornewid:neumorphism:0.3.0'
+    implementation 'com.github.sshadkany:Android_neumorphic:1.2.0'
 }

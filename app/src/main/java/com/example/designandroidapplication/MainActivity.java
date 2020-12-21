@@ -248,13 +248,13 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.neumorphism_code:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/java/com/example/designandroidapplication/ShapeActivity.java";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/java/com/example/designandroidapplication/NeumorphismActivity.java";
                 break;
             case R.id.neumorphism_xml:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_shape.xml";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_neumorphism.xml";
                 break;
             case R.id.neumorphism_dependency:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/shape_round_top_shape.xml";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/build.gradle";
                 break;
             default:
                 Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();

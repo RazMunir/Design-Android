@@ -472,4 +472,106 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_ui_buttonshapewhitebg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Edit Text Custom"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:onClick="goToEditTextCustomActivity"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/edit_text_cusstom_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wev_view_ic_code_24"
+                android:padding="10dp"
+                android:onClick="goToNeumorphismActivityComponents"/>
+
+            <ImageView
+                android:id="@+id/edit_text_cusstom_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_xml_24"
+                android:padding="10dp"
+                android:onClick="goToNeumorphismActivityComponents"/>
+
+            <ImageView
+                android:id="@+id/edit_text_cusstom_dependency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_dependancy_24"
+                android:padding="10dp"
+                android:onClick="goToNeumorphismActivityComponents"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_ui_buttonshapewhitebg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Login Template"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:onClick="goToLoginTemplate"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/login_template_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wev_view_ic_code_24"
+                android:padding="10dp"
+                android:onClick="goToNeumorphismActivityComponents"/>
+
+            <ImageView
+                android:id="@+id/login_template_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_xml_24"
+                android:padding="10dp"
+                android:onClick="goToNeumorphismActivityComponents"/>
+
+            <ImageView
+                android:id="@+id/login_template_dependency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_dependancy_24"
+                android:padding="10dp"
+                android:onClick="goToNeumorphismActivityComponents"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
 </LinearLayout>

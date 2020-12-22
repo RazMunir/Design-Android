@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.designandroidapplication.Blue.BlueActivity;
+import com.example.designandroidapplication.LoginTemplate.LoginTemplateSignUpActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -263,6 +264,19 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(URL, url);
         startActivity(intent);
     }
-
     //End Neumorphism Activit
+
+    //EditTextCustom Activity
+    public void goToEditTextCustomActivity(View view) {
+        startActivity(new Intent(MainActivity.this, EditTextCustomActivity.class));
+    }
+
+    //End EditTextCustom Activit
+
+    //Login Template
+    public void goToLoginTemplate(View view) {
+        startActivity(new Intent(MainActivity.this, LoginTemplateSignUpActivity.class));
+    }
+
+    //End Login Template
 }

@@ -552,7 +552,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/wev_view_ic_code_24"
                 android:padding="10dp"
-                android:onClick="goToNeumorphismActivityComponents"/>
+                android:onClick="goToLoginTemplateComponents"/>
 
             <ImageView
                 android:id="@+id/login_template_xml"
@@ -560,15 +560,23 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/web_view_ic_xml_24"
                 android:padding="10dp"
-                android:onClick="goToNeumorphismActivityComponents"/>
+                android:onClick="goToLoginTemplateComponents"/>
 
             <ImageView
-                android:id="@+id/login_template_dependency"
+                android:id="@+id/login_template_shape"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_dependancy_24"
+                android:src="@drawable/web_view_ic_shapes_24"
                 android:padding="10dp"
-                android:onClick="goToNeumorphismActivityComponents"/>
+                android:onClick="goToLoginTemplateComponents"/>
+
+            <ImageView
+                android:id="@+id/login_template_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/web_view_ic_style_24"
+                android:padding="10dp"
+                android:onClick="goToLoginTemplateComponents"/>
 
         </LinearLayout>
 

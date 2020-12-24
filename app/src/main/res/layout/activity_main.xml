@@ -524,6 +524,57 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToButtonCustomActivity"
+            android:padding="15dp"
+            android:text="Button Custom"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/button_custom_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToButtonCustomActivityComponents"
+                android:padding="10dp"
+                android:src="@drawable/web_view_ic_xml_24" />
+
+            <ImageView
+                android:id="@+id/button_custom_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToButtonCustomActivityComponents"
+                android:padding="10dp"
+                android:src="@drawable/web_view_ic_shapes_24" />
+
+            <ImageView
+                android:id="@+id/button_custom_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToButtonCustomActivityComponents"
+                android:padding="10dp"
+                android:src="@drawable/web_view_ic_style_24" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/login_ui_buttonshapewhitebg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="goToLoginTemplate"
             android:padding="15dp"
             android:text="Login Template"

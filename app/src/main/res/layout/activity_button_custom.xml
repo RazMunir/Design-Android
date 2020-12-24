@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ButtonCustomActivity">
+
+    <Button
+        android:id="@+id/button_signin"
+        style="@style/Button1"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Sign In" />
+
+    <Button
+        android:id="@+id/button_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:text="Forgot password? No worries"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/login_ui_buttonshapewhitebg"
+        android:fontFamily="@font/calibri"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="#96ffffff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signin_signup_btn"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/singn_in_sign_up_buttonshape"
+        android:drawableLeft="@drawable/singn_in_sign_up_ic_touch_app_white_24dp"
+        android:fontFamily="@font/calibri"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

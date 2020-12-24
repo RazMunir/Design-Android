@@ -322,7 +322,37 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-
     //End Login Template
+
+    //Button Custom Activity
+    public void goToButtonCustomActivity(View view) {
+        startActivity(new Intent(MainActivity.this, ButtonCustomActivity.class));
+    }
+
+    public void goToButtonCustomActivityComponents(View view) {
+        String url = "";
+        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+
+        switch (view.getId()) {
+            case R.id.login_template_code:
+                url = "https://github.com/RazMunir/Design-Android/tree/main/app/src/main/java/com/example/designandroidapplication/LoginTemplate";
+                break;
+            case R.id.login_template_xml:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_login_template_sign_up.xml";
+                break;
+            case R.id.login_template_shape:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/login_tamplate_sign_up_button_bg.xml";
+                break;
+            case R.id.login_template_style:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/themes.xml";
+                break;
+            default:
+                Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        intent.putExtra(URL, url);
+        startActivity(intent);
+    }
+
+    //Button Custom Activity
 }

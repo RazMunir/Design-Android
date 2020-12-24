@@ -7,6 +7,7 @@
     tools:context=".EditTextCustomActivity"
     android:padding="20dp">
 
+<!--    one-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/activity_edit_text_custom_et_one"
         android:layout_width="match_parent"
@@ -27,7 +28,9 @@
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
+<!--    two-->
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_edit_text_custom_et_two"
         android:layout_below="@+id/activity_edit_text_custom_et_one"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
@@ -48,5 +51,45 @@
             android:textColor="#FF03DAC5"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
+<!--    three-->
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/activity_edit_text_custom_et_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#F7F7F7"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/login_ui_ic_email_white_24dp"
+                android:drawableLeft="@drawable/login_ui_ic_email_white_24dp"
+                android:drawableTint="#cccccc"
+                android:drawablePadding="12dp"
+                android:hint="Email with card view"
+                android:textColorHint="#cccccc"
+                android:textColor="#FF000000"
+                android:imeOptions="actionNext"
+                android:minWidth="320dp"
+                android:minHeight="50dp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </RelativeLayout>

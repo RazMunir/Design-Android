@@ -334,14 +334,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
 
         switch (view.getId()) {
-            case R.id.login_template_code:
-                url = "https://github.com/RazMunir/Design-Android/tree/main/app/src/main/java/com/example/designandroidapplication/LoginTemplate";
-                break;
             case R.id.login_template_xml:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_login_template_sign_up.xml";
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_button_custom.xml";
                 break;
             case R.id.login_template_shape:
-                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/drawable/login_tamplate_sign_up_button_bg.xml";
+                url = "https://github.com/RazMunir/Design-Android/tree/main/app/src/main/res/drawable";
                 break;
             case R.id.login_template_style:
                 url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/themes.xml";

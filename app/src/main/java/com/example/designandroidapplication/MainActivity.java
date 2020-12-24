@@ -271,6 +271,25 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, EditTextCustomActivity.class));
     }
 
+    public void goToEditTextCustomActivityComponents(View view) {
+        String url = "";
+        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+
+        switch (view.getId()) {
+            case R.id.edit_text_custom_xml:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_edit_text_custom.xml";
+                break;
+            case R.id.edit_text_custom_style:
+                url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/themes.xml";
+                break;
+            default:
+                Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        intent.putExtra(URL, url);
+        startActivity(intent);
+    }
+
     //End EditTextCustom Activit
 
     //Login Template
@@ -302,6 +321,8 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(URL, url);
         startActivity(intent);
     }
+
+
 
     //End Login Template
 }

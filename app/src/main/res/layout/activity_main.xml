@@ -5,578 +5,570 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <RelativeLayout
-        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:background="@drawable/login_ui_buttonshapewhitebg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToLoginUi"
             android:padding="15dp"
             android:text="Login Ui"
             android:textSize="18dp"
-            android:textStyle="bold"
-            android:onClick="goToLoginUi"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/login_ui_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_xml_24"
+                android:onClick="goToLoginUiComponents"
                 android:padding="10dp"
-                android:onClick="goToLoginUiComponents"/>
+                android:src="@drawable/web_view_ic_xml_24" />
 
             <ImageView
                 android:id="@+id/login_ui_shape"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_shapes_24"
+                android:onClick="goToLoginUiComponents"
                 android:padding="10dp"
-                android:onClick="goToLoginUiComponents"/>
+                android:src="@drawable/web_view_ic_shapes_24" />
 
             <ImageView
                 android:id="@+id/login_ui_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_color_lens_24"
+                android:onClick="goToLoginUiComponents"
                 android:padding="10dp"
-                android:onClick="goToLoginUiComponents"/>
+                android:src="@drawable/web_view_ic_color_lens_24" />
 
             <ImageView
                 android:id="@+id/login_ui_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_style_24"
+                android:onClick="goToLoginUiComponents"
                 android:padding="10dp"
-                android:onClick="goToLoginUiComponents"/>
+                android:src="@drawable/web_view_ic_style_24" />
 
             <ImageView
                 android:id="@+id/login_ui_font"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/we_view_ic_font_download_24"
+                android:onClick="goToLoginUiComponents"
                 android:padding="10dp"
-                android:onClick="goToLoginUiComponents"/>
+                android:src="@drawable/we_view_ic_font_download_24" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:background="@drawable/login_ui_buttonshapewhitebg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToSignInLogInActivity"
             android:padding="15dp"
             android:text="SignIn SignUp"
             android:textSize="18dp"
-            android:textStyle="bold"
-            android:onClick="goToSignInLogInActivity"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/sign_in_sign_up_code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/wev_view_ic_code_24"
+                android:onClick="goToSignInSignUpComponents"
                 android:padding="10dp"
-                android:onClick="goToSignInSignUpComponents"/>
+                android:src="@drawable/wev_view_ic_code_24" />
 
             <ImageView
                 android:id="@+id/sign_in_sign_up_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_xml_24"
+                android:onClick="goToSignInSignUpComponents"
                 android:padding="10dp"
-                android:onClick="goToSignInSignUpComponents"/>
+                android:src="@drawable/web_view_ic_xml_24" />
 
             <ImageView
                 android:id="@+id/sign_in_sign_up_shape"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_shapes_24"
+                android:onClick="goToSignInSignUpComponents"
                 android:padding="10dp"
-                android:onClick="goToSignInSignUpComponents"/>
+                android:src="@drawable/web_view_ic_shapes_24" />
 
             <ImageView
                 android:id="@+id/sign_in_sign_up_shape_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_shapes_24"
+                android:onClick="goToSignInSignUpComponents"
                 android:padding="10dp"
-                android:onClick="goToSignInSignUpComponents"/>
+                android:src="@drawable/web_view_ic_shapes_24" />
 
             <ImageView
                 android:id="@+id/sign_in_sign_up_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_style_24"
+                android:onClick="goToSignInSignUpComponents"
                 android:padding="10dp"
-                android:onClick="goToSignInSignUpComponents"/>
+                android:src="@drawable/web_view_ic_style_24" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:background="@drawable/login_ui_buttonshapewhitebg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToLottieAnimationActivity"
             android:padding="15dp"
             android:text="Lottie Animation"
             android:textSize="18dp"
-            android:textStyle="bold"
-            android:onClick="goToLottieAnimationActivity"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/lottie_animation_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_xml_24"
+                android:onClick="goToLottieAnimationComponents"
                 android:padding="10dp"
-                android:onClick="goToLottieAnimationComponents"/>
+                android:src="@drawable/web_view_ic_xml_24" />
 
             <ImageView
                 android:id="@+id/lottie_animation_dependency"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_dependancy_24"
+                android:onClick="goToLottieAnimationComponents"
                 android:padding="10dp"
-                android:onClick="goToLottieAnimationComponents"/>
+                android:src="@drawable/web_view_ic_dependancy_24" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:background="@drawable/login_ui_buttonshapewhitebg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToSignInActivity"
             android:padding="15dp"
             android:text="Sign In(Full Custom Theme)"
             android:textSize="@dimen/text_size_small"
-            android:textStyle="bold"
-            android:onClick="goToSignInActivity"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/sign_in_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_xml_24"
+                android:onClick="goToSignInComponents"
                 android:padding="10dp"
-                android:onClick="goToSignInComponents"/>
+                android:src="@drawable/web_view_ic_xml_24" />
 
             <ImageView
                 android:id="@+id/sign_in_attributes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_attributes_24"
+                android:onClick="goToSignInComponents"
                 android:padding="10dp"
-                android:onClick="goToSignInComponents"/>
+                android:src="@drawable/web_view_ic_attributes_24" />
 
             <ImageView
                 android:id="@+id/sign_in_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_style_24"
+                android:onClick="goToSignInComponents"
                 android:padding="10dp"
-                android:onClick="goToSignInComponents"/>
+                android:src="@drawable/web_view_ic_style_24" />
 
             <ImageView
                 android:id="@+id/sign_in_dimension"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_dimension_24"
+                android:onClick="goToSignInComponents"
                 android:padding="10dp"
-                android:onClick="goToSignInComponents"/>
+                android:src="@drawable/web_view_ic_dimension_24" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:background="@drawable/login_ui_buttonshapewhitebg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToBlueSignInActivity"
             android:padding="15dp"
             android:text="Blue Login System"
             android:textSize="@dimen/text_size_small"
-            android:textStyle="bold"
-            android:onClick="goToBlueSignInActivity"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/blue_sign_in_code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/wev_view_ic_code_24"
+                android:onClick="goToBlueActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToBlueActivityComponents"/>
+                android:src="@drawable/wev_view_ic_code_24" />
 
             <ImageView
                 android:id="@+id/blue_sign_in_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_xml_24"
+                android:onClick="goToBlueActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToBlueActivityComponents"/>
+                android:src="@drawable/web_view_ic_xml_24" />
 
             <ImageView
                 android:id="@+id/blue_sign_in_shape"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_shapes_24"
+                android:onClick="goToBlueActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToBlueActivityComponents"/>
+                android:src="@drawable/web_view_ic_shapes_24" />
 
             <ImageView
                 android:id="@+id/blue_sign_in_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_style_24"
+                android:onClick="goToBlueActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToBlueActivityComponents"/>
+                android:src="@drawable/web_view_ic_style_24" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:background="@drawable/login_ui_buttonshapewhitebg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToDropSignInActivity"
             android:padding="15dp"
             android:text="Drop Sign In"
             android:textSize="@dimen/text_size_medium"
-            android:textStyle="bold"
-            android:onClick="goToDropSignInActivity"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/drop_sign_in_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_xml_24"
+                android:onClick="goToDropSignInActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToDropSignInActivityComponents"/>
+                android:src="@drawable/web_view_ic_xml_24" />
 
             <ImageView
                 android:id="@+id/drop_sign_in_shape"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_shapes_24"
+                android:onClick="goToDropSignInActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToDropSignInActivityComponents"/>
+                android:src="@drawable/web_view_ic_shapes_24" />
 
             <ImageView
                 android:id="@+id/drop_sign_in_shape_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_shapes_24"
+                android:onClick="goToDropSignInActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToDropSignInActivityComponents"/>
+                android:src="@drawable/web_view_ic_shapes_24" />
 
             <ImageView
                 android:id="@+id/drop_sign_in_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_style_24"
+                android:onClick="goToDropSignInActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToDropSignInActivityComponents"/>
+                android:src="@drawable/web_view_ic_style_24" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:background="@drawable/login_ui_buttonshapewhitebg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToShapeActivity"
             android:padding="15dp"
             android:text="Shape, CardView, de.hdodenhof"
             android:textSize="@dimen/text_size_small"
-            android:textStyle="bold"
-            android:onClick="goToShapeActivity"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/shape_code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/wev_view_ic_code_24"
+                android:onClick="goToShapeActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToShapeActivityComponents"/>
+                android:src="@drawable/wev_view_ic_code_24" />
 
             <ImageView
                 android:id="@+id/shape_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_xml_24"
+                android:onClick="goToShapeActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToShapeActivityComponents"/>
+                android:src="@drawable/web_view_ic_xml_24" />
 
             <ImageView
                 android:id="@+id/shape_shape"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_shapes_24"
+                android:onClick="goToShapeActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToShapeActivityComponents"/>
+                android:src="@drawable/web_view_ic_shapes_24" />
 
             <ImageView
                 android:id="@+id/shape_shape_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_shapes_24"
+                android:onClick="goToShapeActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToShapeActivityComponents"/>
+                android:src="@drawable/web_view_ic_shapes_24" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:background="@drawable/login_ui_buttonshapewhitebg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToneumorphismActivity"
             android:padding="15dp"
             android:text="Neumorphism Activity"
             android:textSize="@dimen/text_size_medium"
-            android:textStyle="bold"
-            android:onClick="goToneumorphismActivity"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/neumorphism_code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/wev_view_ic_code_24"
+                android:onClick="goToNeumorphismActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToNeumorphismActivityComponents"/>
+                android:src="@drawable/wev_view_ic_code_24" />
 
             <ImageView
                 android:id="@+id/neumorphism_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_xml_24"
+                android:onClick="goToNeumorphismActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToNeumorphismActivityComponents"/>
+                android:src="@drawable/web_view_ic_xml_24" />
 
             <ImageView
                 android:id="@+id/neumorphism_dependency"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_dependancy_24"
+                android:onClick="goToNeumorphismActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToNeumorphismActivityComponents"/>
+                android:src="@drawable/web_view_ic_dependancy_24" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:background="@drawable/login_ui_buttonshapewhitebg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToEditTextCustomActivity"
             android:padding="15dp"
             android:text="Edit Text Custom"
             android:textSize="@dimen/text_size_medium"
-            android:textStyle="bold"
-            android:onClick="goToEditTextCustomActivity"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true">
+            android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/edit_text_cusstom_code"
+                android:id="@+id/edit_text_custom_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/wev_view_ic_code_24"
+                android:onClick="goToEditTextCustomActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToNeumorphismActivityComponents"/>
+                android:src="@drawable/web_view_ic_xml_24" />
 
             <ImageView
-                android:id="@+id/edit_text_cusstom_xml"
+                android:id="@+id/edit_text_custom_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_xml_24"
+                android:onClick="goToEditTextCustomActivityComponents"
                 android:padding="10dp"
-                android:onClick="goToNeumorphismActivityComponents"/>
-
-            <ImageView
-                android:id="@+id/edit_text_cusstom_dependency"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_dependancy_24"
-                android:padding="10dp"
-                android:onClick="goToNeumorphismActivityComponents"/>
+                android:src="@drawable/web_view_ic_style_24" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:background="@drawable/login_ui_buttonshapewhitebg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToLoginTemplate"
             android:padding="15dp"
             android:text="Login Template"
             android:textSize="@dimen/text_size_medium"
-            android:textStyle="bold"
-            android:onClick="goToLoginTemplate"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/login_template_code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/wev_view_ic_code_24"
+                android:onClick="goToLoginTemplateComponents"
                 android:padding="10dp"
-                android:onClick="goToLoginTemplateComponents"/>
+                android:src="@drawable/wev_view_ic_code_24" />
 
             <ImageView
                 android:id="@+id/login_template_xml"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_xml_24"
+                android:onClick="goToLoginTemplateComponents"
                 android:padding="10dp"
-                android:onClick="goToLoginTemplateComponents"/>
+                android:src="@drawable/web_view_ic_xml_24" />
 
             <ImageView
                 android:id="@+id/login_template_shape"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_shapes_24"
+                android:onClick="goToLoginTemplateComponents"
                 android:padding="10dp"
-                android:onClick="goToLoginTemplateComponents"/>
+                android:src="@drawable/web_view_ic_shapes_24" />
 
             <ImageView
                 android:id="@+id/login_template_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/web_view_ic_style_24"
+                android:onClick="goToLoginTemplateComponents"
                 android:padding="10dp"
-                android:onClick="goToLoginTemplateComponents"/>
+                android:src="@drawable/web_view_ic_style_24" />
 
         </LinearLayout>
 

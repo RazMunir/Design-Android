@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.designandroidapplication.Blue.BlueActivity;
-import com.example.designandroidapplication.LoginTemplate.LoginTemplateSignUpActivity;
+import com.example.designandroidapplication.LoginTemplate.LoginTemplateSignInActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -294,7 +294,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Login Template
     public void goToLoginTemplate(View view) {
-        startActivity(new Intent(MainActivity.this, LoginTemplateSignUpActivity.class));
+        startActivity(new Intent(MainActivity.this, LoginTemplateSignInActivity.class));
     }
 
     public void goToLoginTemplateComponents(View view) {
@@ -334,13 +334,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
 
         switch (view.getId()) {
-            case R.id.login_template_xml:
+            case R.id.button_custom_xml:
                 url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/layout/activity_button_custom.xml";
                 break;
-            case R.id.login_template_shape:
+            case R.id.button_custom_shape:
                 url = "https://github.com/RazMunir/Design-Android/tree/main/app/src/main/res/drawable";
                 break;
-            case R.id.login_template_style:
+            case R.id.button_custom_style:
                 url = "https://github.com/RazMunir/Design-Android/blob/main/app/src/main/res/values/themes.xml";
                 break;
             default:
@@ -351,5 +351,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //Button Custom Activity
+    //End Button Custom Activity
 }

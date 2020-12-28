@@ -11,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesignAndroidApplication">
-        <activity android:name=".ButtonCustomActivity"></activity>
+        <activity android:name=".LoginTemplate.LoginTemplateForgotPasswordActivity"></activity>
         <activity android:name=".LoginTemplate.LoginTemplateSignUpActivity" />
+        <activity android:name=".ButtonCustomActivity" />
+        <activity android:name=".LoginTemplate.LoginTemplateSignInActivity" />
         <activity android:name=".EditTextCustomActivity" />
         <activity android:name=".NeumorphismActivity" />
         <activity android:name=".ShapeActivity" />

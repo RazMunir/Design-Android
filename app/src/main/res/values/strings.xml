@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DesignAndroidApplication</string>
+    <string name="sign_up_terms_condition">By signing up, you agree to our <b>terms and conditions</b></string>
 </resources>

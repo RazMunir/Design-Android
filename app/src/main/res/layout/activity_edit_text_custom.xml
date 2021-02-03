@@ -94,6 +94,7 @@
 
     <!--    four-->
     <EditText
+        android:id="@+id/activity_edit_text_custom_et_four"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/activity_edit_text_custom_et_three"
@@ -111,5 +112,14 @@
         android:textColor="@color/black"
         android:textColorHint="@color/softBalck"
         android:textCursorDrawable="@drawable/edit_text_custom_cursor" />
+
+    <EditText
+        android:layout_below="@+id/activity_edit_text_custom_et_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Drawable selector added"
+        android:textCursorDrawable="@drawable/edit_text_custom_cursor"
+        android:background="@drawable/edit_text_selector" />
 
 </RelativeLayout>

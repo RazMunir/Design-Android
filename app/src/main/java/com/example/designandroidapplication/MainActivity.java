@@ -351,5 +351,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToSwitchActivity(View view) {
+        startActivity(new Intent(this, SwitchButtonActivity.class));
+    }
+
     //End Button Custom Activity
 }

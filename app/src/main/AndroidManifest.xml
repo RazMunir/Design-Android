@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesignAndroidApplication">
-        <activity android:name=".LoginTemplate.LoginTemplateForgotPasswordActivity"></activity>
+        <activity android:name=".SwitchButtonActivity"></activity>
+        <activity android:name=".LoginTemplate.LoginTemplateForgotPasswordActivity" />
         <activity android:name=".LoginTemplate.LoginTemplateSignUpActivity" />
         <activity android:name=".ButtonCustomActivity" />
         <activity android:name=".LoginTemplate.LoginTemplateSignInActivity" />
